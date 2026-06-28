@@ -1,0 +1,460 @@
+/* ===========================
+   GENERAL STYLES
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ===========================
+   NAVIGATION BAR
+=========================== */
+
+header{
+    background:#002147;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo h2{
+    color:#FFD700;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD700;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    background:url("../images/hero.jpg") center/cover no-repeat;
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-text{
+    background:rgba(0,0,0,0.5);
+    padding:40px;
+    border-radius:10px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:22px;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn{
+    display:inline-block;
+    background:#FFD700;
+    color:#002147;
+    padding:12px 30px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#002147;
+}
+
+/* ===========================
+   FACILITIES
+=========================== */
+
+.facilities{
+    padding:60px;
+    text-align:center;
+}
+
+.facility-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* ===========================
+   ABOUT PAGE
+=========================== */
+
+.about{
+    padding:50px;
+}
+
+.about h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.about-image{
+    display:block;
+    width:70%;
+    margin:auto;
+    border-radius:10px;
+    margin-bottom:30px;
+}
+
+.about h2{
+    color:#002147;
+    margin-top:20px;
+}
+
+.about p,
+.about ul{
+    margin-top:10px;
+}
+
+/* ===========================
+   ROOMS PAGE
+=========================== */
+
+.rooms{
+    padding:50px;
+    text-align:center;
+}
+
+.room-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:30px;
+}
+
+.room-card{
+    width:320px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+    padding:20px;
+    transition:0.3s;
+}
+
+.room-card:hover{
+    transform:scale(1.03);
+}
+
+.room-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.room-card h2{
+    margin:15px 0;
+}
+
+.room-card h3{
+    color:#002147;
+    margin:15px 0;
+}
+
+/* ===========================
+   GALLERY PAGE
+=========================== */
+
+.gallery{
+    padding:50px;
+    text-align:center;
+}
+
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.gallery-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.gallery-card:hover{
+    transform:scale(1.03);
+}
+
+.gallery-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.gallery-card h3{
+    padding:15px;
+}
+
+/* ===========================
+   CONTACT PAGE
+=========================== */
+
+.contact{
+    padding:50px;
+}
+
+.contact h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.contact-container{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.contact-info,
+.booking-form{
+    flex:1;
+    min-width:320px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+}
+
+.contact-info p{
+    margin:15px 0;
+}
+
+.map-image{
+    width:100%;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.booking-form label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.booking-form input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.booking-form button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    border:none;
+    background:#FFD700;
+    color:#002147;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.booking-form button:hover{
+    background:#002147;
+    color:white;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+footer h3{
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media screen and (max-width:768px){
+
+/* Navigation */
+
+header{
+    flex-direction:column;
+    padding:20px;
+}
+
+.logo{
+    margin-bottom:15px;
+}
+
+nav ul{
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+/* Hero Section */
+
+.hero{
+    height:70vh;
+    padding:20px;
+}
+
+.hero-text{
+    width:100%;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* Buttons */
+
+.btn{
+    padding:10px 20px;
+    font-size:16px;
+}
+
+/* Facilities */
+
+.facility-container{
+    grid-template-columns:1fr;
+}
+
+.card{
+    width:100%;
+}
+
+/* About */
+
+.about{
+    padding:20px;
+}
+
+.about-image{
+    width:100%;
+}
+
+/* Rooms */
+
+.room-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.room-card{
+    width:95%;
+}
+
+/* Gallery */
+
+.gallery-container{
+    grid-template-columns:1fr;
+}
+
+.gallery-card img{
+    height:220px;
+}
+
+/* Contact */
+
+.contact-container{
+    flex-direction:column;
+}
+
+.contact-info,
+.booking-form{
+    width:100%;
+}
+
+/* Form */
+
+.booking-form input,
+.booking-form button{
+    width:100%;
+}
+
+/* Footer */
+
+footer{
+    padding:20px;
+    font-size:15px;
+}
+
+}
