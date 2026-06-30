@@ -293,7 +293,7 @@ https://github.com/Charani-1625/Hotel_Website
 
 # Netlify Live Website
 
-https://royal-paradise-hotel.netlify.app
+https://royalparadise-hotel.netlify.app
 
 ---
 
