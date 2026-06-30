@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Restaurant Table Booking | Royal Paradise Hotel</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/table-booking.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h2>Royal Paradise Hotel</h2>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="menu.html">Restaurant</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="contact">
+
+<h1>Restaurant Table Reservation</h1>
+
+<div class="booking-form">
+
+<form id="tableBookingForm">
+
+<label>Name</label>
+
+<input type="text" id="customerName">
+
+<label>Email</label>
+
+<input type="email" id="customerEmail">
+
+<label>Phone Number</label>
+
+<input type="tel" id="customerPhone">
+
+<label>Reservation Date</label>
+
+<input type="date" id="bookingDate">
+
+<label>Reservation Time</label>
+
+<input type="time" id="bookingTime">
+
+<label>Number of Guests</label>
+
+<input type="number" id="tableGuests" min="1" max="20">
+
+<label>Table Type</label>
+
+<select id="tableType">
+
+<option value="">Select Table</option>
+
+<option>Indoor Table</option>
+
+<option>Outdoor Garden Table</option>
+
+<option>Poolside Table</option>
+
+<option>Family Table</option>
+
+<option>VIP Dining Table</option>
+
+</select>
+
+<label>Special Request</label>
+
+<textarea id="specialRequest" rows="4" placeholder="Birthday, Anniversary, Decorations, etc."></textarea>
+
+<button type="submit">
+
+Reserve Table
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Royal Paradise Hotel</h3>
+
+<p>© 2026 Royal Paradise Hotel. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>

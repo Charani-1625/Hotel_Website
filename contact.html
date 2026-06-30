@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Royal Paradise Hotel | Contact</title>
+
+    <meta name="description"
+          content="Contact Royal Paradise Hotel and book your luxury stay online.">
+
+    <meta name="keywords"
+          content="Hotel Booking, Contact Hotel, Luxury Hotel, Reservation">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+
+        <div class="logo">
+            <h2>Royal Paradise Hotel</h2>
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="rooms.html">Rooms</a></li>
+
+                <li><a href="gallery.html">Gallery</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Contact Section -->
+
+    <section class="contact">
+
+        <h1>Contact & Room Booking</h1>
+
+        <div class="contact-container">
+
+            <!-- Hotel Details -->
+
+       <div class="contact-info">
+
+    <h2>Contact Information</h2>
+
+    <p>
+        <strong>Address:</strong>
+        Royal Paradise Hotel,
+        Banjara Hills,
+        Hyderabad,
+        Telangana,
+        India.
+    </p>
+
+    <p>
+        <strong>Phone:</strong>
+        +91 9876543210
+    </p>
+
+    <p>
+        <strong>Email:</strong>
+        royalparadisehotel@gmail.com
+    </p>
+
+    <!-- Map Image -->
+
+    <img src="images/map.jpg"
+         alt="Royal Paradise Hotel Location"
+         class="map-image">
+
+</div>
+
+            <!-- Booking Form -->
+
+            <div class="booking-form">
+
+                <h2>Book Your Room</h2>
+
+                <form id="bookingForm">
+
+                    <label>Name</label>
+
+                    <input type="text"
+                        id="name"
+                        placeholder="Enter your name">
+
+                    <label>Email</label>
+
+                    <input type="email"
+                        id="email"
+                        placeholder="Enter your email">
+
+                    <label>Phone</label>
+
+                    <input type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number">
+
+                    <label>Check-in Date</label>
+
+                   <input type="date"
+                        id="checkin"
+                        onchange="calculateCost()">
+
+                    <label>Check-out Date</label>
+
+                    <input type="date"
+                        id="checkout"
+                        onchange="calculateCost()">
+                  
+                    <label>Select Room</label>
+
+                    <select id="room" onchange="calculateCost()">
+                        <option value="">-- Select a Room --</option>
+                        <option value="3500">Deluxe Room - ₹3500 / Night</option>
+                        <option value="5000">Executive Room - ₹5000 / Night</option>
+                        <option value="8500">Luxury Suite - ₹8500 / Night</option>
+                    </select>
+                    
+                    <label>Guests</label>
+
+                   <input type="number"
+                        id="guests"
+                        min="1"
+                        onchange="calculateCost()">
+
+                    <label>Total Amount</label>
+                    <input type="text"
+                        id="totalCost"
+                        readonly
+                        placeholder="₹0">
+                        
+                    <h3>Booking Summary</h3>
+                        <div id="bookingSummary">
+                               <p> Select your room and dates to see the booking summary.</p>
+                        </div>
+
+                    <button type="submit">
+                            Book Now
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>Royal Paradise Hotel</h3>
+
+        <p>📍 Hyderabad, Telangana, India</p>
+
+        <p>📞 +91 9876543210</p>
+
+        <p>✉ royalparadisehotel@gmail.com</p>
+
+        <p>
+            🌐 Facebook |
+            Instagram |
+            Twitter |
+            YouTube
+        </p>
+
+        <p>&copy; 2026 Royal Paradise Hotel. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
